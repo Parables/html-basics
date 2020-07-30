@@ -2,10 +2,16 @@
 <html>
   <head>
     <title>Salaam</title>
+    <!-- Internal styling goes into the head element -->
+    <style>
+      td {
+        text-align: center;
+        padding: 5px;
+        color: white;
+      }
+    </style>
   </head>
   <body>
-    Good day
-
     <form action="/subscribe" method="post">
       <fieldset>
         <legend>Subscribe to the Newsletter</legend>
@@ -98,29 +104,42 @@
       <tbody>
         <!-- Row 1 -->
         <tr>
-          <td rowspan="3" colspan="2">Item 1</td>
-          <td rowspan="1" colspan="2">Item 4</td>
-          <td rowspan="7">Item 6</td>
-          <td rowspan="7" colspan="5">Item 7</td>
-          <td rowspan="7">Item 8</td>
-          <td rowspan="4">Item 9</td>
+          <td rowspan="3" colspan="2" style="background-color: blue;">
+            Item 1
+          </td>
+          <td rowspan="1" colspan="2" style="background-color: blueviolet;">
+            Item 4
+          </td>
+          <td rowspan="7" style="background-color: brown;">Item 6</td>
+          <td rowspan="7" colspan="5" style="background-color: cadetblue;">
+            Item 7
+          </td>
+          <td rowspan="7" style="background-color: chocolate;">Item 8</td>
+          <td rowspan="4" style="background-color: crimson;">Item 9</td>
         </tr>
         <!-- Row 2 -->
         <tr>
-          <td rowspan="2" colspan="2">Item 5</td>
+          <td rowspan="2" colspan="2" style="background-color: darkgoldenrod;">
+            Item 5
+          </td>
         </tr>
         <!-- Row 3 -->
+        <tr></tr>
         <!-- Row 4 -->
         <tr>
-          <td rowspan="4">Item Two</td>
-          <td rowspan="4" colspan="3">Item 3</td>
+          <td rowspan="4" style="background-color: darkgreen;">Item Two</td>
+          <td rowspan="4" colspan="3" style="background-color: darksalmon;">
+            Item 3
+          </td>
         </tr>
         <!-- Row 5 -->
         <tr>
-          <td rowspan="3">Item 10</td>
+          <td style="background-color: darkslateblue;" rowspan="3">Item 10</td>
         </tr>
         <!-- Row 6 -->
+        <tr></tr>
         <!-- Row 7 -->
+        <tr></tr>
       </tbody>
     </table>
   </body>
